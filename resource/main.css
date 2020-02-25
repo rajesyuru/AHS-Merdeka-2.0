@@ -1,0 +1,432 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+    
+    width: 100%;
+}
+
+.top {
+    background-color: #FE8223;
+    min-height: 350px;
+    color: white;
+    padding: 40px;
+    overflow: visible;
+}
+
+.upper {
+    position: relative;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.upper a.logo {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    left: 10%;
+    position: absolute;
+}
+
+
+.upper ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    right: 10%;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.upper li {
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.upper li a{
+    text-decoration: none;
+    color: white;
+    padding: 4px 20px 4px 20px;
+    transition: background-color 200ms;
+}
+
+.upper li.active a{
+    background-color: #E5731B;
+    border-radius: 4px;
+    
+}
+
+.upper li:hover a{
+    background-color: #E5731B;
+    border-radius: 4px;
+    
+}
+
+.lower {
+    display: flex;
+    position: relative;
+    top: 200px;
+    align-items: center;
+}
+
+.lower .desc {
+    position: absolute;
+    left: 10%;
+}
+
+.lower .desc p.a {
+    margin-top: 10px;
+}
+
+.lower .desc p.b {
+    margin-bottom: 30px;
+}
+
+
+
+.subscribe {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+}
+
+.subscribe input{
+    position: relative;
+    padding: 15px 120px 15px 15px;
+    border-radius: 7px;
+    outline: none;
+    border-style: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    font-size: 17px;
+    white-space: nowrap;
+    transition: padding 1s;
+}
+
+.subscribe input::placeholder {
+    overflow: visible;
+}
+
+.subscribe a.subs {
+    position: relative;
+    left: 5%;
+    padding: 15px 30px 15px 30px;
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to bottom, #469B04, #438013);
+    transition: padding 1s, text-decoration 1s, text-align 1s;
+}
+
+.subscribe a.subs:active {
+    top: 2px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+.lower .building{
+    position: absolute;
+    top: -100px;
+    right: 0%;
+    animation-name: float;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.lower .building img {
+    color: white;
+    width: 70%;
+    height: 70%;
+    
+}
+
+@keyframes float {
+    0% {top: -100px;}
+    50% {top: -90px;}
+    100% {top: -100px;}
+}
+
+.feature {
+    position: relative;
+    padding: 40px;
+    top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feature h2 {
+    position: absolute;
+    left: 12%;
+    color: #6F6F6F;
+}
+
+.feature .card {
+    position: relative;
+    width: 270px;
+    height: 350px;
+    top: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    color: #6F6F6F;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: top 200ms, box-shadow 200ms;
+}
+
+.feature .card1::before {
+    background-color: white;
+    content: '';
+    width: 2000px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    left: -400px;
+    top: 100px;
+}
+
+.feature .card2::before {
+    background-color: white;
+    content: '';
+    width: 2000px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    left: -800px;
+    top: 100px;
+}
+
+.feature .card3::before {
+    background-color: white;
+    content: '';
+    width: 2000px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    left: -1200px;
+    top: 100px;
+}
+
+
+
+
+.feature .card .content {
+    position: absolute;
+    left: 0%;
+}
+
+.feature .card1 {
+    background-image: linear-gradient(to bottom, #F65186, #C80C5B);
+}
+
+.feature .card2 {
+    background-image: linear-gradient(to bottom, #ADDF5A, #78B912);
+}
+
+.feature .card3 {
+    background-image: linear-gradient(to bottom, #75C5FF, #0F76C0);
+}
+
+
+.feature .card1 h3 {
+    margin-top: 40px;
+}
+
+.feature p {
+    margin-top: 20px;
+}
+
+.feature .card1 p {
+    margin-top: 20px;
+}
+
+.feature .card1 img {
+    margin-top: 60px;
+}
+
+.feature .card2 img {
+    margin-top: 60px;
+}
+
+.feature .card2 h3 {
+    margin-top: 33px;
+}
+
+.feature .card3 h3 {
+    margin-top: 34px;
+}
+
+
+
+.feature .card3 img {
+    margin-top: 50px;
+}
+
+
+.feature .card1 img { 
+    width: 150px;
+    
+}
+
+.feature .card2 img { 
+    width: 150px;
+}
+
+.feature .card3 img { 
+    width: 80px;
+}
+
+.feature .card:hover {
+    top: 90px;
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+}
+
+.staff {
+    position: relative;
+    padding: 40px;
+    top: 150px;
+}
+
+.staff h2 {
+    position: absolute;
+    left: 12%;
+    color: #6F6F6F;
+}
+
+.staff .row {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.staff .card {
+    position: relative;
+    width: 270px;
+    height: 350px;
+    top: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    color: #6F6F6F;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    transition: top 200ms, box-shadow 200ms;
+}
+
+.staff img {
+    position: absolute;
+    top: 10%;
+}
+
+.staff h3 {
+    position: absolute;
+    top: 70%;
+}
+
+.staff p {
+    position: absolute;
+    top: 80%;
+}
+
+.staff .row1 {
+    top: 90px;
+}
+
+.staff .row2 {
+    top: 150px;
+}
+
+.staff .card:hover {
+    top: -10px;
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+}
+
+.bottom {
+    position: relative;
+    background-color: #FE8223;
+    min-height: 300px;
+    top: 350px;
+    color: white;
+    padding: 40px;
+}
+
+.bottom .left {
+    width: 26%;
+    position: absolute;
+    left: 12%;
+}
+
+.bottom .left p {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+.sosmed {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sosmed .sos p {
+    margin: 0 0 0 12px;
+}
+
+.sosmed .sos {
+    position: absolute;
+    margin: 10px 0 10px 0;
+    display: flex;
+}
+
+.sosmed .facebook {
+    top: 0px;
+}
+
+.sosmed .twitter {
+    top: 35px;
+}
+
+.sosmed .instagram {
+    top: 70px;
+}
+
+.sosmed img {
+    width: 21px;
+    height: 21px;
+}
+
+.bottom .right {
+    position: absolute;
+    top: 12%;
+    right: 12%;
+}
+
+.bottom .right .callnow {
+    padding: 20px 40px 20px 40px;
+    background-color: white;
+    color: #FE8223;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-top: 32px;
+}
+
